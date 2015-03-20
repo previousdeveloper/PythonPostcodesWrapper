@@ -52,3 +52,9 @@ docs/_build/
 
 # PyBuilder
 target/
+.idea/.name
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/PythonPostcodesWrapper.iml
+.idea/scopes/scope_settings.xml
