@@ -29,7 +29,6 @@ class PostCode(object):
         return data
 
 
-    @staticmethod
     def getRandomPostCodes(self):
         pass
         data = requests.get("http://api.postcodes.io/random/postcodes").text
