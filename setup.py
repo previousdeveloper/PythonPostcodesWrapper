@@ -12,7 +12,7 @@ setup(
     url='https://github.com/previousdeveloper/PythonPostcodesWrapper',
     license='LICENSE',
     description='Postcode & Geolocation API for UK',
-    install_requires=['requests', 'postcodes'],
+    install_requires=['requests'],
     include_package_data=True
 )
 

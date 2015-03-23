@@ -44,3 +44,5 @@ class PostCode(object):
         data = requests.get("http://api.postcodes.io/postcodes/" + postcode + "/nearest").text
         return data
 
+
+
