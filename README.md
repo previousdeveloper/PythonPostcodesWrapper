@@ -8,8 +8,9 @@ A simple wrapper around [postcodes.io](http://postcodes.io/)
 
 To install Postcode.io, simply:
 
+```python
 $ pip install postcode.io
-    
+```
     
 ## Usage
 
@@ -28,8 +29,27 @@ Lookup a postcode example
 postcode = client.getLookupPostCode('OX49 5NU')
 ```
 
+Lookup a postcode example
+```python
+postcode = client.getBulkReverseGecoding('{
+            "geolocations": [{
+                                 "longitude": 0.629834723775309,
+                                 "latitude": 0.629834723775309
+                             }, {
+                                 "longitude": -2.49690382054704,
+                                 "latitude": -2.49690382054704,
+                                 "radius": 1000,
+                                 "limit": 5
+                             }]
+        }')
+```
+
+
 For more details see [the documentation on postcodes.io](http://postcodes.io/docs)
 ## Contributing
+
+I am not expert in pyhton if you want to contribute please pull request :)
+
 
 
 1. Fork it
