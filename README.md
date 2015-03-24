@@ -1,4 +1,4 @@
-# PostcodesIo
+# Postcodes.io
 
 A simple wrapper around [postcodes.io](http://postcodes.io/)
 
@@ -8,12 +8,10 @@ A simple wrapper around [postcodes.io](http://postcodes.io/)
 
 To install Postcode.io, simply:
 
-    $ pip install postcode.io
+$ pip install postcode.io
     
     
 ## Usage
-
-    Require the python
 
 ```python
 from lib import PostCodeClient
@@ -27,7 +25,7 @@ client = PostCodeClient()
 
 Lookup a postcode example
 ```python
-postcode = client.lookup('OX49 5NU')
+postcode = client.getLookupPostCode('OX49 5NU')
 ```
 
 For more details see [the documentation on postcodes.io](http://postcodes.io/docs)
