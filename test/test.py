@@ -15,9 +15,7 @@ class PostClientTest(unittest.TestCase):
         self.assertIsNotNone(self.client.getLookupPostCode("OX49 5NU"))
 
     def test_Bulk_Lookup_Post_codes(self):
-        self.payload = {
-            "lib": ["OX49 5NU", "M32 0JG", "NE30 1DP"]
-        }
+        self.payload = {"postcodes": ["OX49 5NU", "M32 0JG", "NE30 1DP"]}
         self.assertIsNotNone(self.client.getLookupPostcodes(self.payload))
 
     def test_Location_Based_Postcodes(self):

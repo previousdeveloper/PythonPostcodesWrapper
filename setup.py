@@ -8,7 +8,7 @@ setup(
     version='0.1',
     author='Gokhan Karadas',
     author_email='gokhan.karadas1992@gmail.com',
-    download_url ="https://github.com/previousdeveloper/PythonPostcodesWrapper",
+    download_url="https://github.com/previousdeveloper/PythonPostcodesWrapper",
     url='https://github.com/previousdeveloper/PythonPostcodesWrapper',
     license='LICENSE',
     description='Postcode & Geolocation API for UK for python',
