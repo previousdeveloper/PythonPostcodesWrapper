@@ -1,17 +1,19 @@
 __author__ = 'gokhan'
 import requests
 
+BASE_URL = "http://api.postcodes.io/postcodes/"
+
 
 class PostCodeClient(object):
     def getLookupPostCode(self, postcode):
         self.postcode = postcode
-        data = requests.get("http://api.postcodes.io/postcodes/" + postcode).text
+        data = requests.get(BASE_URL + postcode).text
         return data
 
 
     def getLookupPostcodes(self, payload):
         self.payload = payload
-        data = requests.post("http://api.postcodes.io/postcodes", payload).text
+        data = requests.post(BASE_URL, payload).text
         return data
 
 
@@ -25,7 +27,7 @@ class PostCodeClient(object):
 
     def getBulkReverseGecoding(self, payload):
         self.payload = payload
-        data = requests.post("http://api.postcodes.io/postcodes", payload).text
+        data = requests.post(BASE_URL, payload).text
         return data
 
 
@@ -36,10 +38,10 @@ class PostCodeClient(object):
 
     def validatePostCode(self, postcode):
         self.postcode = postcode
-        data = requests.get("http://api.postcodes.io/postcodes/" + postcode + "/validate").text
+        data = requests.get(BASE_URL + postcode + "/validate").text
         return data
 
     def getNearestPostCode(self, postcode):
         self.postcode = postcode
-        data = requests.get("http://api.postcodes.io/postcodes/" + postcode + "/nearest").text
+        data = requests.get(BASE_URL + postcode + "/nearest").text
         return data
