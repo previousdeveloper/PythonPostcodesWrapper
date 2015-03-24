@@ -1,12 +1,12 @@
 __author__ = 'gokhan'
 import unittest
 
-from postcodes import PostCode
+from lib import PostCodeClient
 
 
 class PostClientTest(unittest.TestCase):
     def setUp(self):
-        self.client = PostCode()
+        self.client = PostCodeClient()
 
     def test_Nearest_Post_Code(self):
         self.assertIsNotNone(self.client.getNearestPostCode("OX49 5NU"))
@@ -16,7 +16,7 @@ class PostClientTest(unittest.TestCase):
 
     def test_Bulk_Lookup_Post_codes(self):
         self.payload = {
-            "postcodes": ["OX49 5NU", "M32 0JG", "NE30 1DP"]
+            "lib": ["OX49 5NU", "M32 0JG", "NE30 1DP"]
         }
         self.assertIsNotNone(self.client.getLookupPostcodes(self.payload))
 

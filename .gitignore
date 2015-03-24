@@ -58,3 +58,5 @@ target/
 .idea/modules.xml
 .idea/PythonPostcodesWrapper.iml
 .idea/scopes/scope_settings.xml
+.idea/workspace.xml
+.idea/vcs.xml
