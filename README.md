@@ -1,5 +1,5 @@
 # Postcodes.io
-[![Build Status](https://travis-ci.org/previousdeveloper/PythonPostcodesWrapper.svg)](https://travis-ci.org/previousdeveloper/PythonPostcodesWrapper)
+[![Build Status](https://magnum-ci.com/status/0ba52677150f6f693976715c413e306b.png)](https://magnum-ci.com/projects/1719)
 
 A simple wrapper around [postcodes.io](http://postcodes.io/)
 
