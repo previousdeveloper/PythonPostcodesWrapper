@@ -1,2 +1,2 @@
 __author__ = 'gokhan'
-from PostCodeClient import PostCodeClient
+from lib.PostCodeClient import PostCodeClient
