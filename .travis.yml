@@ -9,3 +9,4 @@ install:
   - "pip install ."
   - "pip install requests"
 
+script: nosetests
